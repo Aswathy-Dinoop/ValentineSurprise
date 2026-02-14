@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day My Love ❤️</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating Hearts Background Container -->
+    <div id="hearts-container"></div>
+
+    <!-- Password Entry Page -->
+    <div id="password-overlay" class="overlay active">
+        <div class="overlay-content">
+            <h1 class="elegant-heading">Welcome, My Love</h1>
+            <p class="romantic-text">Enter Our Special Date to Unlock My Heart 💖</p>
+            <div class="password-box">
+                <input type="password" id="special-date-input" placeholder="Hint: Our Wedding Date DDMMYYYY">
+                <button id="unlock-btn">Unlock ❤️</button>
+            </div>
+            <p id="password-message" class="error-msg"></p>
+        </div>
+    </div>
+
+    <!-- Main Content (Hidden until password entered) -->
+    <main id="main-content" class="hidden">
+
+        <!-- Music Control -->
+        <div id="music-control">
+            <button id="music-toggle" title="Play/Pause Music">
+                <i class="fas fa-music"></i>
+            </button>
+            <audio id="bg-music" loop>
+                <!-- Local MP3 file is the most reliable method -->
+                <source src="music/song.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero" style="background-image: url('images/A79A0053.JPG');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="fade-in">Happy Valentine’s Day My Forever ❤️</h1>
+                <p class="fade-in delay-1">You are my always and forever</p>
+                <a href="#timeline" class="btn fade-in delay-2">Our Love Story</a>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section id="countdown-section" class="section">
+            <div class="container">
+                <h2 class="section-title">Counting Down to Our Next Valentine's</h2>
+                <div id="countdown" class="countdown-grid">
+                    <div class="time-box"><span id="days">00</span>
+                        <p>Days</p>
+                    </div>
+                    <div class="time-box"><span id="hours">00</span>
+                        <p>Hours</p>
+                    </div>
+                    <div class="time-box"><span id="minutes">00</span>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="time-box"><span id="seconds">00</span>
+                        <p>Seconds</p>
+                    </div>
+                </div>
+                <p class="romantic-quote">"In your arms is where I belong."</p>
+            </div>
+        </section>
+
+        <!-- Love Story Timeline -->
+        <section id="timeline" class="section">
+            <div class="container">
+                <h2 class="section-title">Our Love Story</h2>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>First Meeting - May 15, 2019</h3>
+                            <div class="timeline-img">
+                                <img src="images/2.jpeg" alt="First Meeting">
+                            </div>
+                            <p>The day we first met and my life changed forever.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h3>First Trip</h3>
+                            <div class="timeline-img">
+                                <img src="images/1.jpeg" alt="First Trip">
+                            </div>
+                            <p>Exploring new horizons together, hand in hand.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>Special Proposal</h3>
+                            <div class="timeline-img">
+                                <img src="images/IMG_2449.JPG" alt="Proposal">
+                            </div>
+                            <p>The moment I knew I wanted to spend every second with you.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h3>Wedding Day - March 28, 2021</h3>
+                            <div class="timeline-img">
+                                <img src="images/A79A0103.JPG" alt="Wedding">
+                            </div>
+                            <p>The day we said 'I Do' and started our beautiful journey as husband and wife.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>Beautiful Memories</h3>
+                            <div class="timeline-img">
+                                <img src="images/IMG_2875.JPG" alt="Memories">
+                            </div>
+                            <p>Every small moment shared with you is a treasure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section id="gallery" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Romantic Memories</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-msg="You make my heart smile.">
+                        <img src="images/3.jpeg" alt="Love Image">
+                    </div>
+                    <div class="gallery-item favorite" data-msg="You are my greatest blessing 🌹">
+                        <img src="images/4.jpeg" alt="Favorite Image">
+                    </div>
+                    <div class="gallery-item" data-msg="Together is a beautiful place to be.">
+                        <img src="images/5.jpeg" alt="Love Image">
+                    </div>
+                    <div class="gallery-item" data-msg="Every love story is beautiful, but ours is my favorite.">
+                        <img src="images/6.jpeg" alt="Love Image">
+                    </div>
+                    <div class="gallery-item" data-msg="My heart is and always will be yours.">
+                        <img src="images/7.jpeg" alt="Love Image">
+                    </div>
+                    <div class="gallery-item" data-msg="I love you more than words can say.">
+                        <img src="images/8.jpeg" alt="Love Image">
+                    </div>
+                    <div class="gallery-item" data-msg="Pure happiness with you.">
+                        <img src="images/9.jpeg" alt="Love Image">
+                    </div>
+                    <div class="gallery-item" data-msg="Our special moments.">
+                        <img src="images/10.jpeg" alt="Love Image">
+                    </div>
+                    <div class="gallery-item" data-msg="A lifetime of love.">
+                        <img src="images/11.jpeg" alt="Love Image">
+                    </div>
+                    <div class="gallery-item" data-msg="Sweetest memories.">
+                        <img src="images/12.jpeg" alt="Love Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reasons Section -->
+        <section id="reasons" class="section">
+            <div class="container">
+                <h2 class="section-title">10 Reasons Why I Love You</h2>
+                <div class="reasons-grid">
+                    <!-- Flip cards will be generated by JS or defined here -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">1</div>
+                            <div class="flip-card-back">Your kind and generous heart.</div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">2</div>
+                            <div class="flip-card-back">The way you make me laugh.</div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">3</div>
+                            <div class="flip-card-back">Your unwavering support for me.</div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">4</div>
+                            <div class="flip-card-back">The way you look at me.</div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">5</div>
+                            <div class="flip-card-back">How safe I feel in your arms.</div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">6</div>
+                            <div class="flip-card-back">Your passion and drive.</div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">7</div>
+                            <div class="flip-card-back">The little things you do for us.</div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">8</div>
+                            <div class="flip-card-back">You are my best friend.</div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">9</div>
+                            <div class="flip-card-back">Your beautiful soul.</div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">10</div>
+                            <div class="flip-card-back">You are just... you.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Letter Section -->
+        <section id="love-letter" class="section bg-light">
+            <div class="container letter-container">
+                <div class="letter">
+                    <h2 class="letter-title">My Heart to Yours</h2>
+                    <div id="typewriter-text" class="letter-content"></div>
+                    <button id="read-heart-btn" class="btn-outline">Read My Heart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grand Finale Section -->
+        <section id="finale" class="section">
+            <div class="container text-center">
+                <div class="surprise-box">
+                    <button id="surprise-btn" class="btn-large pulse">Click For Your Surprise 🎇</button>
+                    <div id="surprise-message" class="hidden">
+                        <div class="heart-burst">❤️</div>
+                        <h2 class="finale-text glowing-text">I love you Ettttayy............. ❤️</h2>
+                        <div class="special-reveal">
+                            <p class="elegant-text">In every lifetime, I will choose you 💍</p>
+                            <div class="surprise-decor">✨ 💖 ✨</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <canvas id="fireworks-canvas"></canvas>
+        </section>
+
+        <footer class="text-center">
+            <p>&copy; 2026 Crafted with love for you.</p>
+        </footer>
+
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-img" src="" alt="Lightbox Image">
+        <p class="lightbox-caption"></p>
+    </div>
+
+    <!-- Secret Message Popup -->
+    <div id="secret-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
